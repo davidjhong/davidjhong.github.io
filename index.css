@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+  }
+
+.top-header {
+    box-shadow:none;
+    background-color: #111;
+    padding: .5%;
+}
+
+.top-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    margin-right: 5%;
+    transition: all .6s; /* Transition Affect */
+}
+
+.top-menu a {
+    font-size: 18px;
+    letter-spacing: 0.10px;
+    line-height: 10px;
+    color: #FFF;
+}
+
+.top-menu a:hover {
+    color: #333333; /* Changes color when hovering above element */
+}
+
+.logo {
+    margin-left: 2%;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #FFF;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px 2px lightgrey;
+}
+
+.text-container {
+    height: 70%;
+    width: 100%;
+    padding: 40px 50px;
+}
+
+.text-container h1 {
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+    line-height: 1;
+}
+
+.text-container h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.text-container p {
+    font-size: 1.1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 25px;
+}
+
+.social-box {
+    padding-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 20px;
+    transition: all 0.6s;
+    color: black;
+}
+
+.social-icons a:hover {
+    color: #0096cc;
+}
+
+.social-icons a {
+    display: inline-block; /* Make links inline-block */
+    transition: all 0.5s ease-in-out infinite;
+}
+  
+.social-icons a:hover {
+    transform: translateY(-5px); /* Move up */
+    transition: all 0.5s ease-in-out infinite;
+}
+  
+.social-icons a:hover i {
+    animation: bounce 1s ease-in-out infinite; /* Bounce animation */
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0); 
+}
+    
+    40% {
+      transform: translateY(-5px);
+}
+    
+    80% {
+      transform: translateY(-5px);  
+}
+}
+
+.about-container {
+    background-color: aliceblue;
+    padding: 20px 40px;
+    width: 45%;
+}
+
+.about-img-container {
+    background-color: aliceblue;
+    
+}
+
+.about-img-container img {
+    width: 50%;
+}
+
+.footer-container {
+    height: 70%;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+/* Decoration */
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.no_link {
+    text-decoration: none; /* Removes Link mark, bulletpoints, etc. */
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.border-bottom {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0,0,0,.125);
+}
+
+.bg-gray {
+    background-color: #f5f8fa;
+}
+
+#mainNav {
+    transform: translateX(100%); 
+    transition: transform 0.8s ease;
+  }
+  
+#mainNav.slideIn {
+    transform: translateX(0);
+}

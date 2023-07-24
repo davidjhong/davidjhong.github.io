@@ -14,25 +14,26 @@
         <div class="logo">
             <a href="index.html" class="no_link">David Hong</a> 
         </div>
-    <!-- Desktop version navigation menu -->
-    <ul class="top-menu desktop-menu">
+        <!-- Desktop version navigation menu -->
+        <ul class="top-menu desktop-menu">
+            <a href="index.html" class="no_link">About</a>
+            <a href="projects.html" class="no_link">Projects</a>
+            <a href="experience.html" class="no_link">Experience</a>
+            <a href="contacts.html" class="no_link">Contact</a>
+        </ul>
+        <!-- Hamburger menu icon for mobile version -->
+        <div class="menu-toggle" onclick="toggleNavMenu()">&#9776;</div>
+    </nav>
+
+    <!-- Mobile version navigation menu -->
+    <ul class="top-menu mobile-menu" id="menuItems">
         <a href="index.html" class="no_link">About</a>
         <a href="projects.html" class="no_link">Projects</a>
         <a href="experience.html" class="no_link">Experience</a>
         <a href="contacts.html" class="no_link">Contact</a>
+        <!-- Add the Exit option -->
+        <a href="javascript:void(0);" onclick="toggleNavMenu()" class="exit-link no_link">Exit</a>
     </ul>
-    <!-- Hamburger menu icon for mobile version -->
-    <div class="menu-toggle" onclick="toggleNavMenu()">&#9776;</div>
-</nav>
-<!-- Mobile version navigation menu -->
-<ul class="top-menu mobile-menu" id="menuItems">
-    <a href="index.html" class="no_link">About</a>
-    <a href="projects.html" class="no_link">Projects</a>
-    <a href="experience.html" class="no_link">Experience</a>
-    <a href="contacts.html" class="no_link">Contact</a>
-    <!-- Add the Exit option -->
-    <a href="javascript:void(0);" onclick="toggleNavMenu()" class="exit-link no_link">Exit</a>
-</ul>
 
     <header class="text-container center border-bottom">
         <img src="images/Academic Search Certificate.jpg" class="profile-pic">

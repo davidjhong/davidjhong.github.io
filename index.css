@@ -200,11 +200,17 @@
         display: none;
     }
 
+    .logo a {
+        font-size: 32px;
+    }
+    
     .menu-toggle {
         font-size: 24px;
         cursor: pointer;
         color: #FFF;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .top-menu.mobile-menu {
@@ -229,7 +235,7 @@
     .top-menu.mobile-menu.show-mobile-menu {
         transform: translateY(0); 
     }
-    
+
     .top-menu.mobile-menu a {
         font-size: 18px;
         letter-spacing: 0.10px;

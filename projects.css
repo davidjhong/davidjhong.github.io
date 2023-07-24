@@ -102,13 +102,10 @@
     line-height: 25px;
 }
 
-.projects-text-container h1 {
-    padding-bottom: 5px;
-}
-
 .projects-text-container a {
-    color:#333333;
-
+    color:#111;
+    font-size: 28px;
+    font-weight: 800;
 }
 
 img {

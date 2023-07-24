@@ -167,3 +167,63 @@ img {
 .p2rem {
     padding: 2rem;
 }
+
+/* Mobile version styles */
+@media (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .logo a {
+        font-size: 32px;
+    }
+    
+    .menu-toggle {
+        font-size: 24px;
+        cursor: pointer;
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-menu.mobile-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%; /* Set the mobile menu to occupy the full height of the viewport */
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        z-index: 999; /* Make sure the menu is on top of everything else */
+        transform: translateY(-100%); /* Slide the menu off the screen initially */
+        transition: transform 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-menu.mobile-menu.show-mobile-menu {
+        transform: translateY(0); /* Slide the menu into view when active */
+    }
+
+    .top-menu.mobile-menu a {
+        font-size: 18px;
+        letter-spacing: 0.10px;
+        line-height: 10px;
+        color: #FFF;
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .top-menu.mobile-menu a:hover {
+        color: #333333;
+    }
+
+    .title-container h1 {
+        font-size: 32px;
+    }
+}

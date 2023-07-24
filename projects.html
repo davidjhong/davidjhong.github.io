@@ -12,13 +12,25 @@
         <div class="logo">
             <a href="index.html" class="no_link">David Hong</a> 
         </div>
-            <ul id = "menu" class="top-menu">
-                <a href="index.html" class="no_link">About</a>
-                <a href="projects.html" class="no_link">Projects</a>
-                <a href="experience.html" class="no_link">Experience</a>
-                <a href="contacts.html" class = "no_link">Contact</a>
-            </ul>
+
+        <ul class="top-menu desktop-menu">
+            <a href="index.html" class="no_link">About</a>
+            <a href="projects.html" class="no_link">Projects</a>
+            <a href="experience.html" class="no_link">Experience</a>
+            <a href="contacts.html" class="no_link">Contact</a>
+        </ul>
+
+        <div class="menu-toggle" onclick="toggleNavMenu()">&#9776;</div>
     </nav>
+
+    <!-- Mobile version navigation menu -->
+    <ul class="top-menu mobile-menu" id="menuItems">
+        <a href="index.html" class="no_link">About</a>
+        <a href="projects.html" class="no_link">Projects</a>
+        <a href="experience.html" class="no_link">Experience</a>
+        <a href="contacts.html" class="no_link">Contact</a>
+        <a href="javascript:void(0);" onclick="toggleNavMenu()" class="exit-link no_link">Exit</a>
+    </ul>
 
     <header class="title-container section">
         <div class="container center section-container">

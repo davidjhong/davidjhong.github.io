@@ -68,6 +68,14 @@
     transform: translateX(0);
 }
 
+.menu-toggle {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 .section {
     opacity: 1;
     transform: translateY(0);
@@ -78,8 +86,6 @@
     opacity: 0;
     pointer-events: none;
 }
-
-
 
 .projects-container {
     padding-top: 2rem;

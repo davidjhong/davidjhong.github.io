@@ -46,8 +46,8 @@
 }
 
 .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 230px;
     border-radius: 50%;
     box-shadow: 0px 4px 6px 2px lightgrey;
 }
@@ -141,18 +141,21 @@
 }
 
 .about-container {
-    background-color: aliceblue;
+
     padding: 20px 40px;
-    width: 45%;
+    width: 60%;
 }
 
 .about-img-container {
-    background-color: aliceblue;
-    
+    padding-left: 40px;
+    width: 50%;
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
 }
 
 .about-img-container img {
-    width: 50%;
+    width: 70%;
 }
 
 .footer-container {
@@ -207,7 +210,7 @@
     .logo a {
         font-size: 32px;
     }
-    
+
     .menu-toggle {
         font-size: 24px;
         cursor: pointer;
@@ -222,13 +225,13 @@
         margin: 0;
         padding: 0;
         width: 100%;
-        height: 100%; 
+        height: 100%; /* Set the mobile menu to occupy the full height of the viewport */
         position: fixed;
         top: 0;
         left: 0;
         background-color: #111;
-        z-index: 999; 
-        transform: translateY(-100%); 
+        z-index: 999; /* Make sure the menu is on top of everything else */
+        transform: translateY(-100%); /* Slide the menu off the screen initially */
         transition: transform 0.4s ease;
         display: flex;
         flex-direction: column;
@@ -237,7 +240,7 @@
     }
 
     .top-menu.mobile-menu.show-mobile-menu {
-        transform: translateY(0); 
+        transform: translateY(0); /* Slide the menu into view when active */
     }
 
     .top-menu.mobile-menu a {
@@ -255,16 +258,18 @@
 
     .text-container {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        margin: auto;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements horizontally */
+        margin: auto;/* Increase the padding for more space */
     }
 
     .about-container {
         width: 100%;
     }
+
     .about-img-container {
-        order: -1; 
-        text-align: center; 
+        order: -1; /* Move the image section above the text section */
+        text-align: center; /* Center the image in the mobile view */
+        width: 100%;
     }
 }

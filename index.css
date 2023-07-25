@@ -141,13 +141,11 @@
 }
 
 .about-container {
-
-    padding: 20px 40px;
+    padding: 10px 30px;
     width: 60%;
 }
 
 .about-img-container {
-    padding-left: 40px;
     width: 50%;
     text-align: center;
     font-size: 10px;
@@ -265,6 +263,7 @@
 
     .about-container {
         width: 100%;
+        text-align: center;
     }
 
     .about-img-container {

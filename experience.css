@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+.top-header {
+    box-shadow:none;
+    background-color: #111;
+    padding: .5%;
+    position: sticky;
+    top:0;
+    z-index: 999;
+}
+
+.top-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    margin-right: 5%;
+    transition: all .6s; /* Transition Affect */
+}
+
+.top-menu a {
+    font-size: 18px;
+    letter-spacing: 0.10px;
+    line-height: 10px;
+    color: #FFF;
+}
+
+.top-menu a:hover {
+    color: #333333; /* Changes color when hovering above element */
+}
+
+.logo {
+    margin-left: 2%;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #FFF;
+}
+
+.title-container {
+    width: 100%;
+    background-color: #D2B48C;
+    padding: 40px 50px;
+}
+
+.title-container h1 {
+    font-size: 42px;
+    color:#111;
+}
+
+#mainNav {
+    transform: translateX(100%); 
+    transition: transform 0.8s ease;
+  }
+  
+#mainNav.slideIn {
+    transform: translateX(0);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.section {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.2s ease-in, transform 0.5s ease-in-out;
+}
+
+.section.faded-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.projects-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 42em;
+    
+}
+
+.projects-img-container {
+    width: 50%;
+}
+
+.projects-text-container {
+    width: 70%;
+    box-sizing: border-box;
+    line-height: 25px;
+    padding-right: 20px;
+}
+
+
+.projects-text-container a {
+    color:#111;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.projects-text-container a:hover {
+    color:#555;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.footer-container {
+    height: 70%;
+    width: 100%;
+    padding: 10px 50px;
+    background-color: white;
+}
+
+/* Decoration */
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.no_link {
+    text-decoration: none; /* Removes Link mark, bulletpoints, etc. */
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.block {
+    display: block;
+}
+
+.border-bottom {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0,0,0,.125);
+}
+
+.bg-gray {
+    background-color: #f5f8fa;
+}
+
+.p2rem {
+    padding: 2rem;
+}
+
+/* Mobile version styles */
+@media (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .logo a {
+        font-size: 32px;
+    }
+    
+    .menu-toggle {
+        font-size: 24px;
+        cursor: pointer;
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-menu.mobile-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%; /* Set the mobile menu to occupy the full height of the viewport */
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        z-index: 999; /* Make sure the menu is on top of everything else */
+        transform: translateY(-100%); /* Slide the menu off the screen initially */
+        transition: transform 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-menu.mobile-menu.show-mobile-menu {
+        transform: translateY(0); /* Slide the menu into view when active */
+    }
+
+    .top-menu.mobile-menu a {
+        font-size: 18px;
+        letter-spacing: 0.10px;
+        line-height: 10px;
+        color: #FFF;
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .top-menu.mobile-menu a:hover {
+        color: #333333;
+    }
+
+    .title-container h1 {
+        font-size: 32px;
+    }
+
+    img {
+        display: none;
+    }
+
+    .projects-img-container {
+        display: none;
+        width: 0%;
+    }
+
+    .projects-text-container {
+        text-align: center;
+        width: 100%;
+    }
+}

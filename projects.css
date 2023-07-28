@@ -96,6 +96,7 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 42em;
+    
 }
 
 .projects-img-container {
@@ -106,7 +107,9 @@
     width: 70%;
     box-sizing: border-box;
     line-height: 25px;
+    padding-right: 20px;
 }
+
 
 .projects-text-container a {
     color:#111;
@@ -114,10 +117,14 @@
     font-weight: 800;
 }
 
+.projects-text-container a:hover {
+    color:#555;
+}
+
 img {
     width: 100%;
     height: auto;
-    vertical-align: middle;
+    padding-bottom: 30px;
 }
 
 .footer-container {

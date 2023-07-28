@@ -236,4 +236,18 @@ img {
     .title-container h1 {
         font-size: 32px;
     }
+
+    img {
+        display: none;
+    }
+
+    .projects-img-container {
+        display: none;
+        width: 0%;
+    }
+
+    .projects-text-container {
+        text-align: center;
+        width: 100%;
+    }
 }

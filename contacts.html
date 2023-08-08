@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Hong</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="contacts.css">
+    <script src="contacts.js" defer></script>
+</head>
+
+<body>
+    <nav id = "mainNav" class="top-header flex justify-between border-bottom">
+        <div class="logo">
+            <a href="index.html" class="no_link">David Hong</a> 
+        </div>
+        <!-- Desktop version navigation menu -->
+        <ul class="top-menu desktop-menu">
+            <a href="index.html" class="no_link">About</a>
+            <a href="projects.html" class="no_link">Projects</a>
+            <a href="experience.html" class="no_link">Experience</a>
+            <a href="contacts.html" class="no_link">Contact</a>
+        </ul>
+        <!-- Hamburger menu icon for mobile version -->
+        <div class="menu-toggle" onclick="toggleNavMenu()">&#9776;</div>
+    </nav>
+
+    <!-- Mobile version navigation menu -->
+    <ul class="top-menu mobile-menu" id="menuItems">
+        <a href="index.html" class="no_link">About</a>
+        <a href="projects.html" class="no_link">Projects</a>
+        <a href="experience.html" class="no_link">Experience</a>
+        <a href="contacts.html" class="no_link">Contact</a>
+        <!-- Add the Exit option -->
+        <a href="javascript:void(0);" onclick="toggleNavMenu()" class="exit-link no_link">Exit</a>
+    </ul>
+
+    <header class="title-container center">
+        <h1>Get in Touch</h1>
+        <p>Send me a message/feedback!</p>
+    </header>
+
+    <div class="container border-bottom bg-gray">
+
+        <div class="left-div">
+          <h2>Contact Info</h2>
+          <p>Email: davidhong0901@gmail.com</p> 
+          <p>Phone: 310-227-5859</p>
+        </div>
+      
+    <div class="right-div">  
+        <form action="https://formspree.io/f/mgejavzp" method="POST" id="contact-form">
+
+            <div>
+                <label for="email">Email:</label> 
+                <input type="email" id="email" name="email" required/>
+            </div>
+            
+            <div>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject"/>
+            </div>
+            
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+        
+            <button type="submit" name="submit">Send</button>
+        
+        </form>
+      </div>
+
+    </div>
+
+    <footer class="footer-container left">
+        <p id="copyright">© 2023 David Hong.</p>
+    </footer>
+
+</body>
+</html>

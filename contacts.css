@@ -84,6 +84,10 @@
     justify-content: center; 
 }
 
+.space {
+    padding: 100px;
+}
+
 .left-div, 
 .right-div {
   margin-right: -10px; 
@@ -243,6 +247,10 @@
         color: #333333;
     }
 
+    .space {
+        display: none;
+    }
+    
     .container {
         flex-direction: column;
     }

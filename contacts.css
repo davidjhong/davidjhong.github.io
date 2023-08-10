@@ -101,12 +101,12 @@
 }
 
 .left-div h2 {
-    font-size: 30px;
+    font-size: 32px;
     padding-bottom: 15px;
 }
 
 .left-div p {
-    font-size: 16px;
+    font-size: 18px;
     padding-bottom: 20px;
 }
   
@@ -120,33 +120,79 @@
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-  }
+}
   
-  #contact-form > div {
+#contact-form > div {
     margin-bottom: 15px; 
-  }
+}
   
-  label {
+label {
     display: block;
     margin-bottom: 5px;
-  }
+}
   
-  input, textarea {
+input, textarea {
     width: 100%;
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #ccc;  
-  } 
+} 
   
-  button[type="submit"] {
-    width: 100px;
-    padding: 10px;
-    border-radius: 50px; 
+button[type="submit"] {
+    width: 125px;
+    padding: 15px;
+    border-radius: 70px; 
     background: #111;
     color: #fff;
     border: none;
     cursor: pointer;
-  }
+}
+
+button:hover {
+    color:#555;
+}
+
+.social-box {
+    padding-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 20px;
+    transition: all 0.6s;
+    color: black;
+}
+
+.social-icons a:hover {
+    color: #0096cc;
+}
+
+.social-icons a {
+    display: inline-block; /* Make links inline-block */
+    transition: all 0.5s ease-in-out infinite;
+}
+  
+.social-icons a:hover {
+    transform: translateY(-5px); /* Move up */
+    transition: all 0.5s ease-in-out infinite;
+}
+  
+.social-icons a:hover i {
+    animation: bounce 1s ease-in-out infinite; /* Bounce animation */
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0); 
+}
+    
+    40% {
+      transform: translateY(-5px);
+}
+    
+    80% {
+      transform: translateY(-5px);  
+}
+}
 
 
 .footer-container {
@@ -250,7 +296,7 @@
     .space {
         display: none;
     }
-    
+
     .container {
         flex-direction: column;
     }

@@ -7,7 +7,7 @@ function slideInNav() {
 // JavaScript to detect scroll direction
 let prevScrollpos = window.pageYOffset;
 let fadingSection = null; // Store the section that is currently fading out
-const fadingThreshold = 450; // Adjust this value to set the distance from the top before fading out
+const fadingThreshold = 600; // Adjust this value to set the distance from the top before fading out
 
 window.onscroll = function() {
     const currentScrollPos = window.pageYOffset;
